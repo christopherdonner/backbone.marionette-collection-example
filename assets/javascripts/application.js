@@ -139,6 +139,7 @@ AngryCatsView = Backbone.Marionette.CompositeView.extend({
   
   initialize: function(){
     this.listenTo(this.collection, "sort", this.renderCollection);
+    console.log(this)
   },
   
   appendHtml: function(collectionView, itemView){
